@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Hub</title>
+    <style>
+        /* Background with soft white-gray-beige gradient */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #f8f8f8, #e0e0e0, #d6cfc7);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        /* Main Heading */
+        h1 {
+            font-size: 3rem;
+            margin-top: 40px;
+            color: #444;
+            font-weight: bold;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Container for buttons */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        /* Exercise Buttons */
+        .button {
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #444;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px 30px;
+            border-radius: 50px;
+            margin: 10px;
+            transition: 0.3s ease-in-out;
+            display: inline-block;
+            width: 300px;
+            text-align: center;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-in-out;
+        }
+
+        /* Hover Effects */
+        .button:hover {
+            background: rgba(240, 240, 240, 1);
+            transform: scale(1.05);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        footer {
+            background: #ffffff;
+            padding: 20px 10px;
+            text-align: center;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            position: relative;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+            color: #555;
+        }
+        .social-links {
+            margin-top: 10px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+        .social-icon {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exercise Hub</h1>
+
+    <div class="container">
+        <a href="Q_1.html" class="button">Exercise 1 - Print Your Name</a>
+        <a href="q_2.html" class="button">Exercise 2 - Numbers 1 to 10</a>
+        <a href="Q_3.html" class="button">Exercise 3 - Webpage Title</a>
+        <a href="q_4.html" class="button">Exercise 4 - Love Quotes</a>
+        <a href="q_5.html" class="button">Exercise 5 - Squares of Numbers</a>
+        <a href="q_6.html" class="button">Exercise 6 - Lists</a>
+        <a href="q_7.html" class="button">Exercise 7 - Heading & HR</a>
+        <a href="q_8.html" class="button">Exercise 8 - Definition List</a>
+        <a href="Q_9.html" class="button">Exercise 9 - Search Engines</a>
+        <a href="q_10.html" class="button">Exercise 10 - External Links</a>
+    </div>
+    <footer>
+        <p>© 2024 Kalash's Portfolio | Designed with Passion and Purpose</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/kalash_.solanke/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" title="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/kalashsingh-solanke-aa89a920b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" title="LinkedIn" class="social-icon">
+            </a>
+            <a href="https://x.com/KalashsinghS" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" title="Twitter" class="social-icon">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
