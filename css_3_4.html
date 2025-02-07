@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARQUUE</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .marquee {
+            width: 100%;
+            background-color: black;
+            padding: 10px 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee-text {
+            display: inline-block;
+            font-size: 24px;
+            font-weight: bold;
+            animation: marquee 10s linear infinite, colorChange 1s infinite alternate;
+        }
+
+        @keyframes marquee {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+
+        @keyframes colorChange {
+            0% { color: red; }
+            100% { color: orange; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="marquee">
+        <span class="marquee-text">⚠️ Important Announcement: Stay Updated with the Latest News! ⚠️</span>
+    </div>
+
+</body>
+</html>

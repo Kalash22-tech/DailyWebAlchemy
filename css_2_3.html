@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images with Border Styles</title>
+    <style>
+        .image-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-top: 4px solid red;
+            border-right: 4px dashed blue;
+            border-bottom: 4px dotted gray;
+            border-left: 4px double rgb(182, 255, 239);
+            border-radius: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="images_bird.jpg" alt="Bird" class="img">
+        <img src="images_dog.jpg" alt="Dog" class="img">
+        <img src="images_fish.jpg" alt="Fish" class="img">
+    </div>
+
+</body>
+</html>
