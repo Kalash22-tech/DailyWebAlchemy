@@ -1,1 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .typing-container {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 20px 0;
+            height: 40px;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .menu-item {
+            position: relative;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: white;
+            padding: 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+        }
+        .menu-item:hover {
+            background: linear-gradient(135deg, #ff6a00, #ee0979);
+            transform: scale(1.5);
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            color: black;
+            list-style: none;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 200px;
+        }
+        .dropdown li {
+            padding: 8px 12px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .dropdown li:hover {
+            background: #ddd;
+        }
+        .dropdown a {
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        footer {
+            background: #222;
+            padding: 20px 10px;
+            text-align: center;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            margin-top: auto;
+        }
+        .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 
+.button:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <div class="typing-container" id="typing-text"></div>
+    <div class="menu">
+        <div class="menu-item" onclick="toggleDropdown(this)">HTML
+            <ul class="dropdown">
+                <li><a href="Q_1.html" class="button"> Print Your Name</a></li>
+                <li><a href="q_2.html" class="button"> Numbers 1 to 10</a></li>
+                <li><a href="Q_3.html" class="button"> Webpage Title</a></li>
+                <li><a href="q_4.html" class="button"> Love Quotes</a></li>
+                <li><a href="q_5.html" class="button"> Squares of Numbers</a></li>
+                <li><a href="q_6.html" class="button"> Lists</a></li>
+                <li><a href="q_7.html" class="button"> Heading & HR</a></li>
+                <li><a href="q_8.html" class="button"> Definition List</a></li>
+                <li><a href="Q_9.html" class="button"> Search Engines</a></li>
+                <li><a href="q_10.html" class="button">  External Links</a></li>
+                <li><a href="Registertion_form.html" class="button">  Registratio Form</a></li>
+                <li><a href="Gallery.html" class="button">  Gallery</a></li>
+            </ul>
+        </div>
+        <div class="menu-item" onclick="toggleDropdown(this)">CSS
+            <ul class="dropdown">
+                <li><a href="css_1_1.html" class="button">Heading Styling</a></li>
+                <li><a href="css_1_2.html" class="button">List Background</a></li>
+                <li><a href="css_1_3.html" class="button">Fullscreen Background</a></li>
+                <li><a href="css_1_4.html" class="button">Background Position</a></li>
+                <li><a href="css_2_1.html" class="button">Recipe Styling</a></li>
+                <li><a href="css_2_2.html" class="button">Rounded Box</a></li>
+                <li><a href="css_2_3.html" class="button">Image Borders</a></li>
+                <li><a href="css_2_4.html" class="button">Relative Positioning</a></li>
+                <li><a href="css_3_1.html" class="button">Two Columns</a></li>
+                <li><a href="css_3_2.html" class="button">Google Fonts & Icons</a></li>
+                <li><a href="css_3_3.html" class="button">Image Effects</a></li>
+                <li><a href="css_3_4.html" class="button">Marquee Animation</a></li>
+            </ul>
+        </div>
+        <div class="menu-item" onclick="toggleDropdown(this)">CSS
+            <ul class="dropdown">
+                <li><a href="#">Selectors</a></li>
+                <li><a href="#">Flexbox</a></li>
+                <li><a href="#">Flexbox & Grid</a></li>
+                <li><a href="#">Flexbox & Grid</a></li>
+            </ul>
+        </div>
+        <div class="menu-item" onclick="toggleDropdown(this)">CSS
+            <ul class="dropdown">
+                <li><a href="#">Selectors</a></li>
+                <li><a href="#">Flexbox & Grid</a></li>
+                <li><a href="#">Flexbox & Grid</a></li>
+                <li><a href="#">Flexbox & Grid</a></li>
+            </ul>
+        </div>
+        <div class="menu-item" onclick="toggleDropdown(this)">CSS
+            <ul class="dropdown">
+                <li><a href="#">Selectors</a></li>
+                <li><a href="#">Flexbox & Grid</a></li>
+                <li><a href="#">Flexbox & Grid</a></li>
+                <li><a href="#">Flexbox & Grid</a></li>
+            </ul>
+        </div>
+        <div class="menu-item" onclick="toggleDropdown(this)">CSS
+            <ul class="dropdown">
+                <li><a href="#">Selectors</a></li>
+                <li><a href="#">Flexbox & Grid</a></li>
+                <li><a href="#">Flexbox & Grid</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Kalashsingh Solanke | Designed with Passion and Purpose</p>
+    </footer>
+    <script>
+        function toggleDropdown(element) {
+            let dropdown = element.querySelector(".dropdown");
+            let isVisible = dropdown.style.display === "block";
+            document.querySelectorAll(".dropdown").forEach(el => el.style.display = "none");
+            dropdown.style.display = isVisible ? "none" : "block";
+        }
+    </script>
+</body>
+</html>
